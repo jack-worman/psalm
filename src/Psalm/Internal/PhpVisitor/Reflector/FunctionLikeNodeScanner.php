@@ -95,7 +95,7 @@ class FunctionLikeNodeScanner
     /**
      * @var ?FunctionLikeStorage
      */
-    public $storage;
+    public ?FunctionLikeStorage $storage;
 
     /**
      * @param array<string, non-empty-array<string, Union>> $existing_function_template_types

@@ -24,7 +24,7 @@ class PluginList
     private ?array $all_plugins = null;
 
     /** @var ?array<string,?string> [pluginClass => ?packageName] */
-    private $enabled_plugins;
+    private ?array $enabled_plugins;
 
     public function __construct(?ConfigFile $config_file, ComposerLock $composer_lock)
     {

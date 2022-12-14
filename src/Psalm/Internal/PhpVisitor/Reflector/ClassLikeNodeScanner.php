@@ -107,7 +107,7 @@ class ClassLikeNodeScanner
     /**
      * @var array<string, array<string, Union>>
      */
-    public $class_template_types = [];
+    public array $class_template_types = [];
 
     private ?Name $namespace_name;
 
@@ -116,12 +116,12 @@ class ClassLikeNodeScanner
     /**
      * @var ?ClassLikeStorage
      */
-    public $storage;
+    public ?ClassLikeStorage $storage;
 
     /**
      * @var array<string, TypeAlias>
      */
-    public $type_aliases = [];
+    public array $type_aliases = [];
 
     public function __construct(
         Codebase $codebase,

@@ -16,19 +16,19 @@ class TypeComparisonResult
      *
      * @var ?bool
      */
-    public $scalar_type_match_found;
+    public ?bool $scalar_type_match_found;
 
     /** @var ?bool */
-    public $type_coerced;
+    public ?bool $type_coerced;
 
     /** @var ?bool */
-    public $type_coerced_from_mixed;
+    public ?bool $type_coerced_from_mixed;
 
     /** @var ?bool */
-    public $type_coerced_from_as_mixed;
+    public ?bool $type_coerced_from_as_mixed;
 
     /** @var ?bool */
-    public $to_string_cast;
+    public ?bool $to_string_cast;
 
     /**
      * This is primarily used for array access.
@@ -41,14 +41,14 @@ class TypeComparisonResult
      *
      * @var ?bool
      */
-    public $type_coerced_from_scalar;
+    public ?bool $type_coerced_from_scalar;
 
     /** @var ?Union */
-    public $replacement_union_type;
+    public ?Union $replacement_union_type;
 
     /** @var ?Atomic */
-    public $replacement_atomic_type;
+    public ?Atomic $replacement_atomic_type;
 
     /** @var ?non-empty-list<int|string> */
-    public $missing_shape_fields;
+    public ?array $missing_shape_fields;
 }
