@@ -9,8 +9,6 @@ use Psalm\Internal\Type\ParseTree;
  */
 class EncapsulationTree extends ParseTree
 {
-    /**
-     * @var bool
-     */
+    
     public bool $terminated = false;
 }

@@ -11,7 +11,7 @@ use Psalm\Internal\Scanner\UnresolvedConstantComponent;
  */
 class ArraySpread extends UnresolvedConstantComponent
 {
-    /** @var UnresolvedConstantComponent */
+    
     public UnresolvedConstantComponent $array;
 
     public function __construct(UnresolvedConstantComponent $array)

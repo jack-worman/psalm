@@ -55,7 +55,7 @@ final class GithubActionsReport extends Report
         );
     }
 
-    /** @param mixed $value */
+    
     private function escapeProperty($value): string
     {
         return strtr(

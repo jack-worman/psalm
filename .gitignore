@@ -5,6 +5,7 @@
 /.phpunit.result.cache
 .*.swp
 .*.swo
+/.php-cs-fixer.cache
 /composer.lock
 /phpunit.xml
 /vendor-bin/*/composer.lock

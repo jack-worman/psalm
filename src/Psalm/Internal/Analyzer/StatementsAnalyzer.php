@@ -94,19 +94,13 @@ use const STDERR;
  */
 class StatementsAnalyzer extends SourceAnalyzer
 {
-    /**
-     * @var SourceAnalyzer
-     */
+    
     protected SourceAnalyzer $source;
 
-    /**
-     * @var FileAnalyzer
-     */
+    
     protected FileAnalyzer $file_analyzer;
 
-    /**
-     * @var Codebase
-     */
+    
     protected Codebase $codebase;
 
     /**
@@ -145,7 +139,7 @@ class StatementsAnalyzer extends SourceAnalyzer
 
     private ?string $fake_this_class = null;
 
-    /** @var NodeDataProvider */
+    
     public NodeDataProvider $node_data;
 
     /** @var ?DataFlowGraph */

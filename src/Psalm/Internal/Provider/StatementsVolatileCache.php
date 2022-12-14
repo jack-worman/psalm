@@ -29,9 +29,7 @@ final class StatementsVolatileCache
      */
     protected array $access = [];
 
-    /**
-     * @var int
-     */
+    
     protected int $max_size;
 
     /**
@@ -59,7 +57,6 @@ final class StatementsVolatileCache
     }
 
     /**
-     * @param string $key
      * @return list<Stmt>
      * @throws InvalidArgumentException
      */
@@ -79,7 +76,6 @@ final class StatementsVolatileCache
     }
 
     /**
-     * @param string $key
      * @param list<Stmt> $content
      */
     public function set(string $key, array $content): void

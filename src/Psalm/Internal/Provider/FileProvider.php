@@ -141,7 +141,7 @@ class FileProvider
         if ($filter !== null) {
             $iterator = new RecursiveCallbackFilterIterator(
                 $iterator,
-                /** @param mixed $_ */
+                
                 static function (string $current, $_, RecursiveIterator $iterator) use ($filter): bool {
                     if ($iterator->hasChildren()) {
                         $path = $current . DIRECTORY_SEPARATOR;

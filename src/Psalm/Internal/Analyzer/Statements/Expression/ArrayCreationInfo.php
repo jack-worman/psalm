@@ -31,9 +31,7 @@ class ArrayCreationInfo
      */
     public array $class_strings = [];
 
-    /**
-     * @var bool
-     */
+    
     public bool $can_create_objectlike = true;
 
     /**
@@ -41,14 +39,10 @@ class ArrayCreationInfo
      */
     public array $array_keys = [];
 
-    /**
-     * @var int
-     */
+    
     public int $int_offset = 0;
 
-    /**
-     * @var bool
-     */
+    
     public bool $all_list = true;
 
     /**

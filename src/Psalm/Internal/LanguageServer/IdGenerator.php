@@ -11,14 +11,11 @@ namespace Psalm\Internal\LanguageServer;
  */
 class IdGenerator
 {
-    /**
-     * @var int
-     */
+    
     public int $counter = 1;
 
     /**
      * Returns a unique ID
-     *
      */
     public function generate(): int
     {

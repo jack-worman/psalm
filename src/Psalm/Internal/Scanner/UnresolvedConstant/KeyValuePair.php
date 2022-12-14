@@ -14,7 +14,7 @@ class KeyValuePair extends UnresolvedConstantComponent
     /** @var ?UnresolvedConstantComponent */
     public ?UnresolvedConstantComponent $key;
 
-    /** @var UnresolvedConstantComponent */
+    
     public UnresolvedConstantComponent $value;
 
     public function __construct(?UnresolvedConstantComponent $key, UnresolvedConstantComponent $value)

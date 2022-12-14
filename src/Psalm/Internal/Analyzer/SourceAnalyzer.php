@@ -13,9 +13,7 @@ use Psalm\Type\Union;
  */
 abstract class SourceAnalyzer implements StatementsSource
 {
-    /**
-     * @var SourceAnalyzer
-     */
+    
     protected SourceAnalyzer $source;
 
     public function __destruct()

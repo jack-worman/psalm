@@ -36,9 +36,7 @@ class SwitchScope
      */
     public array $leftover_statements = [];
 
-    /**
-     * @var PhpParser\Node\Expr|null
-     */
+    
     public ?PhpParser\Node\Expr $leftover_case_equality_expr;
 
     /**

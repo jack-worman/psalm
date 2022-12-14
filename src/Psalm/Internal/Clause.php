@@ -30,10 +30,10 @@ use const PHP_VERSION_ID;
 class Clause
 {
     use ImmutableNonCloneableTrait;
-    /** @var int */
+    
     public int $creating_conditional_id;
 
-    /** @var int */
+    
     public int $creating_object_id;
 
     /**
@@ -69,19 +69,19 @@ class Clause
      */
     public ?array $impossibilities;
 
-    /** @var bool */
+    
     public bool $wedge;
 
-    /** @var bool */
+    
     public bool $reconcilable;
 
-    /** @var bool */
+    
     public bool $generated = false;
 
     /** @var array<string, bool> */
     public array $redefined_vars = [];
 
-    /** @var string */
+    
     public string $hash;
 
     /**

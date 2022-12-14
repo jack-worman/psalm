@@ -132,8 +132,6 @@ final class CliUtils
         foreach ($autoload_files as $file) {
             /**
              * @psalm-suppress UnresolvableInclude
-             *
-             * @var mixed
              */
             $autoloader = require_once $file;
 

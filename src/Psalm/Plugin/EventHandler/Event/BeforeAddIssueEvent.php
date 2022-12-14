@@ -8,14 +8,10 @@ use Psalm\Issue\CodeIssue;
 
 final class BeforeAddIssueEvent
 {
-    /**
-     * @var CodeIssue
-     */
+    
     private CodeIssue $issue;
 
-    /**
-     * @var bool
-     */
+    
     private bool $fixable;
 
     /** @internal */

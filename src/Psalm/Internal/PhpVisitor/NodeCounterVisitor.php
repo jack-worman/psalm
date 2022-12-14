@@ -9,7 +9,7 @@ use PhpParser;
  */
 class NodeCounterVisitor extends PhpParser\NodeVisitorAbstract
 {
-    /** @var int */
+    
     public int $count = 0;
 
     public function enterNode(PhpParser\Node $node): ?int

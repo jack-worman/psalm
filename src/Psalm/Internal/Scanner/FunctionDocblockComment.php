@@ -7,29 +7,19 @@ namespace Psalm\Internal\Scanner;
  */
 class FunctionDocblockComment
 {
-    /**
-     * @var string|null
-     */
+    
     public ?string $return_type;
 
-    /**
-     * @var string|null
-     */
+    
     public ?string $return_type_description;
 
-    /**
-     * @var int|null
-     */
+    
     public ?int $return_type_start;
 
-    /**
-     * @var int|null
-     */
+    
     public ?int $return_type_end;
 
-    /**
-     * @var int|null
-     */
+    
     public ?int $return_type_line_number;
 
     /**
@@ -69,8 +59,6 @@ class FunctionDocblockComment
 
     /**
      * Whether or not the function is deprecated
-     *
-     * @var bool
      */
     public bool $deprecated = false;
 
@@ -83,29 +71,21 @@ class FunctionDocblockComment
 
     /**
      * Whether or not the function is internal
-     *
-     * @var bool
      */
     public bool $internal = false;
 
     /**
      * Whether or not the function uses get_args
-     *
-     * @var bool
      */
     public bool $variadic = false;
 
     /**
      * Whether or not the function is pure
-     *
-     * @var bool
      */
     public bool $pure = false;
 
     /**
      * Whether or not to specialize a given call (useful for taint analysis)
-     *
-     * @var bool
      */
     public bool $specialize_call = false;
 
@@ -143,15 +123,11 @@ class FunctionDocblockComment
 
     /**
      * Whether or not to ignore the nullability of this function's return type
-     *
-     * @var bool
      */
     public bool $ignore_nullable_return = false;
 
     /**
      * Whether or not to ignore the nullability of this function's return type
-     *
-     * @var bool
      */
     public bool $ignore_falsable_return = false;
 
@@ -185,37 +161,25 @@ class FunctionDocblockComment
      */
     public array $if_false_assertions = [];
 
-    /**
-     * @var bool
-     */
+    
     public bool $inheritdoc = false;
 
-    /**
-     * @var bool
-     */
+    
     public bool $mutation_free = false;
 
-    /**
-     * @var bool
-     */
+    
     public bool $external_mutation_free = false;
 
-    /**
-     * @var bool
-     */
+    
     public bool $no_named_args = false;
 
-    /** @var bool */
+    
     public bool $stub_override = false;
 
-    /**
-     * @var int
-     */
+    
     public int $since_php_major_version = 0;
 
-    /**
-     * @var int
-     */
+    
     public int $since_php_minor_version = 0;
 
     /**

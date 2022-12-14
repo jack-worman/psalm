@@ -18,9 +18,7 @@ use const LOCK_SH;
  */
 class Providers
 {
-    /**
-     * @var FileProvider
-     */
+    
     public FileProvider $file_provider;
 
     /**
@@ -28,24 +26,16 @@ class Providers
      */
     public ?ParserCacheProvider $parser_cache_provider;
 
-    /**
-     * @var FileStorageProvider
-     */
+    
     public FileStorageProvider $file_storage_provider;
 
-    /**
-     * @var ClassLikeStorageProvider
-     */
+    
     public ClassLikeStorageProvider $classlike_storage_provider;
 
-    /**
-     * @var StatementsProvider
-     */
+    
     public StatementsProvider $statements_provider;
 
-    /**
-     * @var FileReferenceProvider
-     */
+    
     public FileReferenceProvider $file_reference_provider;
 
     /**

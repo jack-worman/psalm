@@ -9,19 +9,13 @@ use Psalm\Internal\Type\ParseTree;
  */
 class Value extends ParseTree
 {
-    /**
-     * @var string
-     */
+    
     public string $value;
 
-    /**
-     * @var int
-     */
+    
     public int $offset_start;
 
-    /**
-     * @var int
-     */
+    
     public int $offset_end;
 
     /**
@@ -29,9 +23,7 @@ class Value extends ParseTree
      */
     public ?string $text;
 
-    /**
-     * @param ParseTree|null $parent
-     */
+    
     public function __construct(
         string $value,
         int $offset_start,

@@ -27,8 +27,6 @@ class ComposerLock
     }
 
     /**
-     * @param mixed $package
-     *
      * @psalm-assert-if-true array{
      *      name: string,
      *      extra: array{psalm: array{pluginClass: string}}

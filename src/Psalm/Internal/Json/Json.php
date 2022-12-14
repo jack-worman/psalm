@@ -26,9 +26,6 @@ class Json
     public const DEFAULT = 0;
 
     /**
-     * @param mixed $data
-     *
-     *
      * @psalm-pure
      */
     public static function encode($data, ?int $options = null): string

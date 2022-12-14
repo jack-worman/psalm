@@ -44,24 +44,16 @@ class FileAnalyzer extends SourceAnalyzer
 {
     use CanAlias;
 
-    /**
-     * @var string
-     */
+    
     protected string $file_name;
 
-    /**
-     * @var string
-     */
+    
     protected string $file_path;
 
-    /**
-     * @var string|null
-     */
+    
     protected ?string $root_file_path;
 
-    /**
-     * @var string|null
-     */
+    
     protected ?string $root_file_name;
 
     /**
@@ -104,19 +96,13 @@ class FileAnalyzer extends SourceAnalyzer
      */
     public array $class_analyzers_to_analyze = [];
 
-    /**
-     * @var null|Context
-     */
+    
     public ?Context $context;
 
-    /**
-     * @var ProjectAnalyzer
-     */
+    
     public ProjectAnalyzer $project_analyzer;
 
-    /**
-     * @var Codebase
-     */
+    
     public Codebase $codebase;
 
     private int $first_statement_offset = -1;

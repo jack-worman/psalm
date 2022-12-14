@@ -129,8 +129,6 @@ final class Shepherd implements AfterAnalysisInterface
     }
 
     /**
-     * @param mixed $ch
-     *
      * @psalm-pure
      */
     public static function getCurlErrorMessage($ch): string

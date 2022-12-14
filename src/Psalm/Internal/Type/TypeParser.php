@@ -107,7 +107,6 @@ class TypeParser
      * @param  array{int,int}|null   $php_version
      * @param  array<string, array<string, Union>> $template_type_map
      * @param  array<string, TypeAlias> $type_aliases
-     *
      */
     public static function parseTokens(
         array $type_tokens,
@@ -874,7 +873,7 @@ class TypeParser
 
                 if ($atomic_type instanceof TNamedObject) {
                     if (defined($atomic_type->value)) {
-                        /** @var mixed */
+                        
                         $constant_value = constant($atomic_type->value);
 
                         if (!is_int($constant_value)) {
