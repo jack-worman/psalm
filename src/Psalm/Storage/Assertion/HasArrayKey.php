@@ -10,7 +10,7 @@ use UnexpectedValueException;
  */
 final class HasArrayKey extends Assertion
 {
-    public $key;
+    public string $key;
 
     public function __construct(string $key)
     {
