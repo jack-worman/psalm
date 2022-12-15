@@ -11,13 +11,9 @@ final class EnumCaseStorage
      */
     public $value;
 
-    /** @var CodeLocation */
-    public $stmt_location;
+    public CodeLocation $stmt_location;
 
-    /**
-     * @var bool
-     */
-    public $deprecated = false;
+    public bool $deprecated = false;
 
     /**
      * @param int|string|null  $value

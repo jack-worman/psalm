@@ -10,7 +10,7 @@ use Psalm\Storage\Assertion;
 final class DoesNotHaveExactCount extends Assertion
 {
     /** @var positive-int */
-    public $count;
+    public int $count;
 
     /** @param positive-int $count */
     public function __construct(int $count)

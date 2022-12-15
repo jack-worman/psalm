@@ -10,10 +10,7 @@ use Psalm\CodeLocation;
 final class AttributeStorage
 {
     use ImmutableNonCloneableTrait;
-    /**
-     * @var string
-     */
-    public $fq_class_name;
+    public string $fq_class_name;
 
     /**
      * @var list<AttributeArg>
@@ -21,16 +18,14 @@ final class AttributeStorage
     public $args;
 
     /**
-     * @var CodeLocation
      * @psalm-suppress PossiblyUnusedProperty part of public API
      */
-    public $location;
+    public CodeLocation $location;
 
     /**
-     * @var CodeLocation
      * @psalm-suppress PossiblyUnusedProperty part of public API
      */
-    public $name_location;
+    public CodeLocation $name_location;
 
     /**
      * @param list<AttributeArg> $args

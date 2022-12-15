@@ -9,10 +9,7 @@ namespace Psalm\Type\Atomic;
  */
 final class TEnumCase extends TNamedObject
 {
-    /**
-     * @var string
-     */
-    public $case_name;
+    public string $case_name;
 
     public function __construct(string $fq_enum_name, string $case_name)
     {

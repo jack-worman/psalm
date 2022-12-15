@@ -15,13 +15,11 @@ final class TTypeAlias extends Atomic
     /**
      * @var array<string, TTypeAlias>|null
      */
-    public $extra_types;
+    public ?array $extra_types = null;
 
-    /** @var string */
-    public $declaring_fq_classlike_name;
+    public string $declaring_fq_classlike_name;
 
-    /** @var string */
-    public $alias_name;
+    public string $alias_name;
 
     /**
      * @param array<string, TTypeAlias>|null $extra_types

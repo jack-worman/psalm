@@ -9,8 +9,5 @@ namespace Psalm\Type\Atomic;
  */
 final class TCallableArray extends TNonEmptyArray
 {
-    /**
-     * @var string
-     */
-    public $value = 'callable-array';
+    public string $value = 'callable-array';
 }

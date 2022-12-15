@@ -12,10 +12,8 @@ final class TDependentListKey extends TInt implements DependentType
 {
     /**
      * Used to hold information as to what list variable this refers to
-     *
-     * @var string
      */
-    public $var_id;
+    public string $var_id;
 
     /**
      * @param string $var_id the variable id

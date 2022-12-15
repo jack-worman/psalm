@@ -16,10 +16,7 @@ final class TCallable extends Atomic
 {
     use CallableTrait;
 
-    /**
-     * @var string
-     */
-    public $value;
+    public string $value;
 
     /**
      * @param  array<lowercase-string, string> $aliased_classes

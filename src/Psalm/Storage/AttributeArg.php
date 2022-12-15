@@ -13,10 +13,9 @@ final class AttributeArg
 {
     use ImmutableNonCloneableTrait;
     /**
-     * @var ?string
      * @psalm-suppress PossiblyUnusedProperty It's part of the public API for now
      */
-    public $name;
+    public ?string $name = null;
 
     /**
      * @var Union|UnresolvedConstantComponent
@@ -24,10 +23,9 @@ final class AttributeArg
     public $type;
 
     /**
-     * @var CodeLocation
      * @psalm-suppress PossiblyUnusedProperty It's part of the public API for now
      */
-    public $location;
+    public CodeLocation $location;
 
     /**
      * @param Union|UnresolvedConstantComponent $type

@@ -21,8 +21,7 @@ use function count;
  */
 final class TValueOf extends Atomic
 {
-    /** @var Union */
-    public $type;
+    public Union $type;
 
     public function __construct(Union $type, bool $from_docblock = false)
     {
